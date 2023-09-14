@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,17 +9,143 @@
     <link rel="stylesheet" href="./assets/styles/styles.css" />
   </head>
 
-  <body>
-    <!-- START: Colorful Blurred Background -->
-    <div class="absolute h-screen w-screen">
-      <div class="absolute h-[25rem] w-[40rem] rounded-full m-[22rem] rotate-45 bg-blue-400"></div>
-      <div class="absolute h-[25rem] w-[45rem] rounded-full right-[23rem] top-[15rem] rotate-[-60deg] bg-purple-400"></div>
+  <body
+    class="flex flex-col items-center justify-center h-screen print:scale-75">
+    <h1 class="mb-8 text-2xl font-semibold border-b-2 border-black px-2">
+      The "All-But-One" Principal
+    </h1>
+    <div class="flex flex-col">
+      <!-- START: Row 1 -->
+      <div class="flex flex-row space-x-5 mx-auto">
+        <div class="box">
+          <span class="pink">Running Play</span>
+        </div>
+        <div class="text-center w-[7.5rem] text-sm my-auto leading-tight">
+          What kind of play was it?
+        </div>
+        <div class="box"><span class="green">Loose Ball Play</span></div>
+      </div>
+      <!-- END: Row 1 -->
+
+      <!-- START: Arrows -->
+      <div class="flex flex-row space-x-5 mx-auto">
+        <arrow>↓</arrow>
+        <span class="w-[7.5rem]"></span>
+        <arrow>↓</arrow>
+      </div>
+      <!-- END: Arrows -->
+
+      <!-- START: Row 2 -->
+      <div class="flex flex-row space-x-5 mx-auto">
+        <div class="box"><span>End of the Run</span></div>
+        <div class="text-center w-[7.5rem] text-sm my-auto leading-tight">
+          This is the basic spot of enforcement.
+        </div>
+        <div class="box"><span>Previous Spot</span></div>
+      </div>
+      <!-- END: Row 2 -->
+
+      <!-- START: Arrows -->
+      <div class="flex flex-row space-x-5 mx-auto">
+        <div class="flex flex-row w-48 justify-between">
+          <arrow double>↓</arrow>
+          <arrow double>↓</arrow>
+        </div>
+        <span class="w-[7.5rem]"></span>
+        <div class="flex flex-row w-48 justify-between">
+          <arrow double>↓</arrow>
+          <arrow double>↓</arrow>
+        </div>
+      </div>
+      <!-- END: Arrows -->
+
+      <!-- START: Row 3 -->
+      <div class="flex flex-row space-x-5 mx-auto">
+        <div class="flex flex-row w-48 justify-between">
+          <div double class="box"><span>Yes</span></div>
+          <div double class="box"><span>No</span></div>
+        </div>
+        <div class="text-center w-[7.5rem] text-sm my-auto leading-tight">
+          Did <u>Team A</u> foul behind the basic spot?
+        </div>
+        <div class="flex flex-row w-48 justify-between">
+          <div double class="box"><span>Yes</span></div>
+          <div double class="box"><span>No</span></div>
+        </div>
+      </div>
+      <!-- END: Row 3 -->
+
+      <!-- START: Arrows -->
+      <div class="flex flex-row space-x-5 mx-auto">
+        <div class="flex flex-row w-48 justify-between">
+          <arrow double>↓</arrow>
+          <arrow double>↓</arrow>
+        </div>
+        <span class="w-[7.5rem]"></span>
+        <div class="flex flex-row w-48 justify-between">
+          <arrow double>↓</arrow>
+          <arrow double>↓</arrow>
+        </div>
+      </div>
+      <!-- END: Arrows -->
+
+      <!-- START: Row 4 -->
+      <div class="flex flex-row space-x-5 mx-auto text-sm">
+        <div class="flex flex-row w-48 justify-between">
+          <div double class="box">Spot of Foul</div>
+          <div double class="box">
+            <span
+              >End of <br />
+              Run</span
+            >
+          </div>
+        </div>
+        <div class="text-center w-[7.5rem] text-sm my-auto leading-tight">
+          Enforce the penalty from here.
+        </div>
+        <div class="flex flex-row w-48 justify-between">
+          <div double class="box"><span>Spot of Foul</span></div>
+          <div double class="box"><span>Previous Spot</span></div>
+        </div>
+      </div>
+      <!-- END: Row 4 -->
+
+      <div class="w-[32rem] mx-auto">
+        <p class="mt-6 mb-3 text-lg font-semibold underline text-center">
+          <span class="orange">Special Penalty Enforcements</span>
+        </p>
+        <ol
+          class="mx-auto flex flex-col space-y-3 list-outside list-decimal text-justify leading-snug">
+          <li>
+            <p>
+              <b class="purple pl-5">Roughing the Passer</b> &ndash; The penalty
+              for roughing the passer on a completed forward pass will be
+              enforced from the dead ball spot when the run ends beyond
+              <u>Team A's</u> scrimmage line and no change of possession has
+              occurred.
+              <span class="yellow"
+                >Tack on the yardage to the end of the run.</span
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              <b class="purple pl-5">Change of Possession</b> &ndash; If both
+              teams foul during a down where there is a change of team
+              possession, the team last in possession may keep the ball if:
+            </p>
+
+            <ol
+              class="list-[lower-alpha] w-10/12 flex flex-col space-y-1 mx-auto">
+              <li>They did not foul prior to the change of possession.</li>
+              <li>
+                They decline all live ball fouls by the opponent prior to the
+                change of possession.
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </div>
     </div>
-    <!-- END: Colorful Blurred Background -->
-    <!-- START: Main Section -->
-    <section class="flex h-screen w-full items-center justify-center backdrop-blur-[190px]">
-      <h1 class="text-6xl font-semibold text-stone-800">Hello World</h1>
-    </section>
-    <!-- END: Main Section -->
   </body>
 </html>
