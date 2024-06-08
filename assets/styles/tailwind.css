@@ -27,7 +27,7 @@
     @apply bg-pink-300 px-0.5 print:bg-stone-300;
   }
   .green {
-    @apply bg-green-400 px-0.5 print:bg-stone-300;
+    @apply bg-green-300 px-0.5 print:bg-stone-300;
   }
   .purple {
     @apply bg-purple-300 px-0.5 print:bg-stone-300;
